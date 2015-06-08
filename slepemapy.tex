@@ -7,10 +7,10 @@
 
 \usetheme{Proso}
 
-\title[slepemapy.cz]{Rozšíření funkcionality slepemapy.cz}
+\title[slepemapy.cz]{Adaptabilní výukový systém pro učení faktických znalostí zeměpisu}
 \author{Vít Stanislav}
 \institute{Fakulta informatiky Masarykovy univerzity}      % Enter your institute name between curly braces
-\date{10. 12. 2014}
+\date{TODO. 6. 2015}
 
 \begin{document}
 % --------------------------- SLIDE --------------------------------------------
@@ -20,26 +20,47 @@
 \begin{frame}
 	\frametitle{Obsah}
   \begin{itemize}
-  \huge \item slepemapy.cz před projektem
-  \huge \item implementovaná rozšíření
-  \huge \item současný stav aplikace
+  \huge \item Systém z pohledu uživatele
+%- uzivatelsky pohled: procvičování, mapa znalostí, přehled map
+% - počet map / obsah
+  \huge \item Vnitřní fungování systému
+%- architektura
+ %- rozdělení práce
+ %- použité technologie 
+ %- modelovani a predikce
+%- časový harmonogram
+  \huge \item Související systémy a výzkum
+%- použití
+%- počet uživatelů / použití / 
+%- odkud přicházi? - z googlu
+%- překlady en/es/de
+%- další systémy
+%- výzkum na datech
+%- ocenění
   \end{itemize}
 \end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Obsah}
-  \begin{itemize}
-  \huge \item slepemapy.cz před projektem
-  \semitransp[20]{ \huge \item implementovaná rozšíření
-  \huge \item současný stav aplikace}
-  \end{itemize}
-\end{frame}
-% ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Procvičování států}
    \includegraphics[width=\textwidth]{img/practice-example-cs.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Mapa znalostí}
+   \includegraphics[width=\textwidth]{img/knowledge-map-world.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Přehled map}
+   \includegraphics[width=\textwidth]{img/overview.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Architektura systému}
+   \includegraphics[width=\textwidth]{img/architecture.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
@@ -53,98 +74,101 @@
         \item celková znalost uživatele
         \item znalost daného státu 
       \end{itemize}
-      Kritéria výběru otázky 
+      Výběr otázky 
       \begin{itemize}
         \item přiměřená obtížnost 
-        \item neopakovat stejný stát hned
-        \item učení všech států na mapě 
+        \item otevřená nebo s 2~-~6 možnostmi
+        \item výběr možností
       \end{itemize}
     \end{column}
     \begin{column}{.49\textwidth}
-       \includegraphics[width=\textwidth]{img/knowledge-map.png}
+       \includegraphics[width=\textwidth]{img/architecture-server.png}
     \end{column}
   \end{columns}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Obsah}
+	\frametitle{Projekt v čase}
   \begin{itemize}
-  \semitransp[20]{\huge \item slepemapy.cz před projektem}
-  \semitransp[100]{ 
-  \huge \item implementovaná rozšíření
-  }
-  \semitransp[20]{\huge \item současný stav aplikace}
-  \end{itemize}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Podpora pro města, řeky, jezera, ...}
-   \includegraphics[width=\textwidth]{img/map-rivers.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Optimalizace pro vyhledávače (SEO)}
-   \includegraphics[width=\textwidth]{img/keywords-cloud.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Přehled map}
-   \includegraphics[width=\textwidth]{img/overview.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-  \frametitle{Mnoho dalších vylepšení a oprav chyb}
-  \begin{itemize}
-  \item přiblížení mapy
-  \item optimalizace vykreslování mapy
-  \item optimalizace SQL dotazu pro mapu znalostí
-  \item progress bar procvičených a naučených států na mapě znalostí
-  \item automatizace nasazení front-endu pomocí Grunt
-  \item přepracování hlavní strany – přímé odkazy na procvičování vybraných map
-  \item tlačítka pro sdílení na sociálních sítích
-  \end{itemize}
-   Celkem  266 Git commitů.
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Obsah}
-  \begin{itemize}
-  \semitransp[20]{ 
-    \huge \item slepemapy.cz před projektem
-    \huge \item implementovaná rozšíření
-  }
-  \semitransp[100]{ 
-  \huge \item současný stav aplikace
-  }
+    \item Vývoj beta verze -- červenec až listopad 2013
+    \begin{itemize}
+      \item procvičování států světa
+    \end{itemize}
+    \item Studentský projekt na FI -- prosinec 2013 až květen 2014
+    \begin{itemize}
+      \item podpora pro města, řeky, jezera, apod.
+      \item přehled map
+      \item SEO
+    \end{itemize}
+    \item Projekt z CTT -- srpen až prosinec 2014
+    \begin{itemize}
+      \item internacionalizace a anglická lokalizace
+      \item osobní cíle
+      \item anketa obtížnosti otázek
+    \end{itemize}
   \end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Provoz aplikace}
-	 Návštěvnost listopad 2013 - listopad 2014
    \includegraphics[width=\textwidth]{img/audience.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Provoz aplikace}
-	 Návštěvnost listopad 2014
-   \includegraphics[width=\textwidth]{img/audience-latest.png}
+  \begin{itemize}
+    \item 10 milionů odpovědí celkem
+    \item 1 milion odpovědí za měsíc
+    \item 800 uživatelů za den
+  \end{itemize}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Návštěvnost během dne}
+	 
+   \includegraphics[width=\textwidth]{img/answers_in_day_by_minute_absolute.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+  \huge  Související systémy a výzkum
+\end{frame}
+% --------------------------- SLIDE --------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{autoskolachytre.cz}
+	 
+   \includegraphics[width=\textwidth]{img/autoskola.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{anatom.cz}
+	 
+   \includegraphics[width=\textwidth]{img/anatomie.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Výzkum na posbíraných datech}
+
+  \begin{itemize}
+   \item Modelování znalostí studentů
+   \item Modelování zapomínání a času odpovědí
+  %\item Adaptive Practice of Facts in Domains with Varied Prior Knowledge (EDM 2014)
+  %\item An analysis of response times in adaptive practice of geography (EDM 2015)
+  \end{itemize}
+
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Další využití}
   \begin{itemize}
-  \item Adaptive Practice of Facts in Domains with Varied Prior Knowledge (EDM 2014)
-  \item Adaptive Learning Group - experimenty s posbíranými daty
   \item Dionýz Lazar - Analýza dat ze systému pro výuku zeměpisu (bakalářská práce)
   \item Jan Kučera - Adaptabilní webový systém pro výuku anatomie, slepaanatomie.cz (diplomová práce)
   \end{itemize}
@@ -152,7 +176,7 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-  \frametitle{Konec}
+  \frametitle{~}
 \begin{center} 
 \huge  Díky za pozornost.
 \end{center}
