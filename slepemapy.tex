@@ -18,30 +18,7 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Obsah}
-  \begin{itemize}
-  \huge \item Systém z pohledu uživatele
-%- uzivatelsky pohled: procvičování, mapa znalostí, přehled map
-% - počet map / obsah
-  \huge \item Systém z pohledu vývojáře
-%- architektura
- %- rozdělení práce
- %- použité technologie 
- %- modelovani a predikce
-%- časový harmonogram
-  \huge \item Související systémy a výzkum
-%- použití
-%- počet uživatelů / použití / 
-%- odkud přicházi? - z googlu
-%- překlady en/es/de
-%- další systémy
-%- výzkum na datech
-%- ocenění
-  \end{itemize}
-\end{frame}
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Procvičování států}
+	\frametitle{Procvičování}
    \includegraphics[width=\textwidth]{img/practice-example-cs.png}
 \end{frame}
 % ------------------------------------------------------------------------------
@@ -59,20 +36,10 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Obsah}
-  \begin{itemize}
-  \semitransp[20]{
-  \huge \item Systém z pohledu uživatele
-}
-  \semitransp[100]{ 
-  \huge \item Systém z pohledu vývojáře
-  }
-  \semitransp[20]{
-  \huge \item Související systémy a výzkum
-}
-  \end{itemize}
+	\frametitle{Responzivní design}
+   \includegraphics[width=\textwidth]{img/responsive.png}
 \end{frame}
-% --------------------------- SLIDE --------------------------------------------
+% ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Architektura systému}
@@ -81,49 +48,44 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Výběr vhodných otázek}
-  \begin{columns}
-   \begin{column}{.49\textwidth}
-      Odhad parametrů z odpovědí uživatelů 
-      \begin{itemize}
-        \item obtížnost státu
-        \item celková znalost uživatele
-        \item znalost daného státu 
-      \end{itemize}
-      Výběr otázky 
-      \begin{itemize}
-        \item přiměřená obtížnost 
-        \item otevřená nebo s 2~-~6 možnostmi
-        \item výběr možností
-      \end{itemize}
-    \end{column}
-    \begin{column}{.49\textwidth}
-       \includegraphics[width=\textwidth]{img/architecture-server.png}
-    \end{column}
-  \end{columns}
+	\frametitle{Příprava map}
+	\begin{itemize}
+    \item Zdroj map: www.NaturalEarthData.com
+    \item Zdrojový formát dat: shapefile
+    \item kartograph.py -> SVG
+	\end{itemize}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Zobrazení map v prohlížeči}
+	\begin{itemize}
+    \item kartograph.js, Raphaël.js
+    \item přiblížení mapy
+    \item tooltipy s detaily o položkách
+    \
+	\end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Projekt v čase}
-  \begin{itemize}
-    \item \textbf{Vývoj beta verze} (červen -- listopad 2013
+     \textbf{Vývoj beta verze} (červen -- listopad 2013)
     \begin{itemize}
       \item procvičování států světa
     \end{itemize}
-    \item \textbf{Studentský projekt na FI} (prosinec 2013 -- květen 2014)
+     \textbf{Studentský projekt na FI} (prosinec 2013 -- květen 2014)
     \begin{itemize}
       \item podpora pro města, řeky, jezera, apod.
       \item přehled map
       \item SEO
     \end{itemize}
-    \item \textbf{Projekt z CTT} (srpen -- prosinec 2014)
+     \textbf{Projekt z CTT} (srpen -- prosinec 2014)
     \begin{itemize}
       \item internacionalizace a anglická lokalizace
       \item osobní cíle
       \item anketa obtížnosti otázek
     \end{itemize}
-  \end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
@@ -139,24 +101,37 @@
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{Návštěvnost během dne}
-	 
    \includegraphics[width=\textwidth]{img/answers_in_day_by_minute_absolute.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Obsah}
+	\frametitle{Uživatelé ze škol během dne}
+   \includegraphics[width=\textwidth]{img/answers_by_divider_in_day_by_minute_school_divider_20.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Další analýzy}
+   \includegraphics[width=\textwidth]{img/success_by_dividers.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Zpětná vazba od uživatelů}
   \begin{itemize}
-  \semitransp[20]{
-  \huge \item Systém z pohledu uživatele
-  \huge \item Systém z pohledu vývojáře
-}
-  \semitransp[100]{ 
-  \huge \item Související systémy a výzkum
-  }
+   \item Je to fakt SUPER, moooooc mi to pomohlo.Děkuji Vilma 4.B
+   \item Toto je skvělý na procvičení ;) Díky za to co děláte, pomáháme mladým lidem se vzdělávat ;) S chutí do dalších projektů a map ;)
+   \item Ahoj, našla jsem si vás dneska, protože zítra píšu slepou mapu z Asie a Evropy a já už jsem byla vážně ztracená. Jste úžasná stránka! Konečně někdo kdo má přehledně udělaný kontinenty a tak, protože my na to píšeme ve škole pořád písemky. Díky :)
   \end{itemize}
 \end{frame}
+% ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Zpětná vazba od uživatelů}
+   \includegraphics[width=\textwidth]{img/feedback_by_type.png}
+\end{frame}
+% ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
 	\frametitle{autoskolachytre.cz}
@@ -179,16 +154,16 @@
    \item \textbf{Adaptabilní procvičování}
 
   \begin{itemize}
-   \item J. Papoušek, R. Pelánek, V. Stanislav. Adaptive Practice of Facts in Domains with Varied Prior Knowledge. Educational Data Mining (EDM), 2014.
+   \item J. Papoušek, R. Pelánek, \textbf{V. Stanislav}. Adaptive Practice of Facts in Domains with Varied Prior Knowledge. Educational Data Mining (EDM), 2014.
    \item J. Papoušek, R. Pelánek. Impact of Adaptive Educational System Behaviour on Student Motivation. Artificial Intelligence in Education (AIED), 2015.
-   \item J. Papoušek, R. Pelánek, J. Řihák, V. Stanislav. An Analysis of Response Times in Adaptive Practice of Geography Facts. Educational Data Mining (EDM), 2015.
+   \item J. Papoušek, R. Pelánek, J. Řihák, \textbf{V. Stanislav}. An Analysis of Response Times in Adaptive Practice of Geography Facts. Educational Data Mining (EDM), 2015.
   \end{itemize}
 
    \item \textbf{Modelování studentů }
 
   \begin{itemize}
-   \item R. Pelánek. Metrics for Evaluation of Student Models. Journal of Educational Data Mining, 2015.
    \item J. Nižnan, R. Pelánek, J. Řihák. Student Models for Prior Knowledge Estimation. Educational Data Mining (EDM), 2015.
+   \item R. Pelánek. Modeling Students' Memory for Application in Adaptive Educational Systems. Educational Data Mining (EDM), 2015.
   \end{itemize}
   \end{itemize}
 
