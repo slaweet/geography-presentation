@@ -4,13 +4,14 @@
 
 \newcommand{\semitransp}[2][35]{\color{fg!#1}#2}
 \usepackage{wrapfig}
+\usepackage{graphicx, booktabs}
 
 \usetheme{Proso}
 
-\title[slepemapy.cz]{Adaptabilní výukový systém pro učení faktických znalostí zeměpisu}
+\title[slepemapy.cz]{Adaptive Practice of Facts in Domains with Varied Prior Knowledge}
 \author{Vít Stanislav}
-\institute{Fakulta informatiky Masarykovy univerzity}      % Enter your institute name between curly braces
-\date{22. 6. 2015}
+\institute{Masaryk University, Brno}      % Enter your institute name between curly braces
+\date{18. 11. 2015}
 
 \begin{document}
 % --------------------------- SLIDE --------------------------------------------
@@ -18,153 +19,175 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Procvičování}
-   \includegraphics[width=\textwidth]{img/practice-example-cs.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Mapa znalostí}
-   \includegraphics[width=\textwidth]{img/knowledge-map-world.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Přehled map}
-   \includegraphics[width=\textwidth]{img/overview.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Responzivní design}
-   \includegraphics[width=\textwidth]{img/responsive.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Architektura systému}
-   \includegraphics[width=\textwidth]{img/architecture.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Příprava map}
+	\frametitle{Presentation overview}
 	\begin{itemize}
-    \item Zdroj map: www.NaturalEarthData.com
-    \item Zdrojový formát dat: shapefile
-    \item kartograph.py $\rightarrow$ SVG
-	\end{itemize}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Zobrazení map v prohlížeči}
-	\begin{itemize}
-    \item kartograph.js, Raphaël.js
-    \item přiblížení mapy
-    \item tooltipy s detaily o položkách
+    \item Context of facts learning
+    \item Case study - Geography facts system
+    \item Evaluation of the system
     \
 	\end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Projekt v čase}
-     \textbf{Vývoj beta verze} (červen -- listopad 2013)
-    \begin{itemize}
-      \item procvičování států světa
-    \end{itemize}
-     \textbf{Studentský projekt na FI} (prosinec 2013 -- květen 2014)
-    \begin{itemize}
-      \item podpora pro města, řeky, jezera, apod.
-      \item přehled map
-      \item SEO
-    \end{itemize}
-     \textbf{Projekt z CTT} (srpen -- prosinec 2014)
-    \begin{itemize}
-      \item internacionalizace a anglická lokalizace
-      \item osobní cíle
-      \item anketa obtížnosti otázek
-    \end{itemize}
+	\frametitle{\ldots Practice of Facts \ldots}
+   Adaptive \textbf{Practice of Facts} in Domains with Varied Prior Knowledge
+	\begin{itemize}
+    \item How to learn a lot of facts?
+	  \item e.g. vocabulary, countries, human bones 
+	  \item AKA retrieval practice
+    \item flashcard method (and software)
+    \
+	\end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Provoz aplikace}
+	\frametitle{Adaptive \ldots}
+   \textbf{Adaptive} Practice of Facts in Domains with Varied Prior Knowledge
+	\begin{itemize}
+    \item 
+    \
+	\end{itemize}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{\ldots Domains with Varied Prior Knowledge}
+       Adaptive Practice of Facts in \textbf{Domains with Varied Prior Knowledge}
+  \begin{columns}
+   \begin{column}{.49\textwidth}
+      \begin{itemize}
+        \item Where is Egypt?
+        \item Where is Burkina Faso?
+        \item Do you know what means in English:
+        \item cat
+        \item bristle
+        \
+      \end{itemize}
+    \end{column}
+    \begin{column}{.49\textwidth}
+       \includegraphics[width=\textwidth]{img/knowledge-map.png}
+    \end{column}
+  \end{columns}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Case Study - Geography facts system}
+   \includegraphics[width=\textwidth]{img/knowledge-map-world-en.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Practice}
+   \includegraphics[width=\textwidth]{img/practice-example-en.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Question Construction Steps}
+	 \center{
+   \includegraphics[width=0.5\textwidth]{img/3steps.png}
+   }
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Item Selection – Scoring Functions}
+   \includegraphics[width=\textwidth]{img/3functions.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+  \frametitle{~}
+\begin{center} 
+\huge{Are adaptive questions better then random?}
+\end{center}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+  \frametitle{Are adaptive questions better then random?}
+\begin{center} 
+\begin{table}[tbh]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Condition & Item selection & Options selection \\
+    \midrule
+    A-A & Adaptive & Adaptive \\
+    A-R & Adaptive & Random \\
+    R-A & Random & Adaptive \\
+    R-R & Random & Random \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\end{center}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{How to measure it?}
   \begin{itemize}
-    \item 200 000 návštěv a 10 milionů odpovědí celkem
-    \item 20 000 návštěv a 1 milion odpovědí za poslední měsíc
+    \item Success rate increase?
+    \item User impression? 
+    \item Time in the system? 
+    \
   \end{itemize}
-   \includegraphics[width=\textwidth]{img/audience.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Návštěvnost během dne}
-   \includegraphics[width=\textwidth]{img/answers_in_day_by_minute_absolute.png}
+	\frametitle{Results - survivor graph}
+   \includegraphics[width=\textwidth]{img/survivor-hack-raw.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Uživatelé ze škol během dne}
-   \includegraphics[width=\textwidth]{img/answers_by_divider_in_day_by_minute_school_divider_20.png}
+	\frametitle{Results - return rate}
+\begin{table}
+  \centering
+  \label{tab:return-prob}
+  \begin{tabular}{ll}
+    \toprule
+    Condition & Return rate \\
+    \midrule
+    A-A & 	15.1\% \\
+    A-R & 	13.9\% \\
+    R-A & 	14.3\% \\
+    R-R & 	13.1\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Další analýzy}
-   \includegraphics[width=\textwidth]{img/success_by_dividers.png}
+	\frametitle{Results - learning curve}
+   \includegraphics[width=\textwidth]{img/learning_curves_all.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Zpětná vazba od uživatelů}
-   \includegraphics[width=\textwidth]{img/feedback_by_type.png}
+	\frametitle{Results - filtered learning curve}
+   \includegraphics[width=\textwidth]{img/learning_curves_filtered.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{autoskolachytre.cz}
-	 
-   \includegraphics[width=\textwidth]{img/autoskola.png}
+	\frametitle{Results - filtered reverse learning curve}
+   \includegraphics[width=\textwidth]{img/learning_curves_reverse.png}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{anatom.cz}
-	 
-   \includegraphics[width=\textwidth]{img/anatomie.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Výzkum na posbíraných datech}
-
+	\frametitle{Conclusion}
   \begin{itemize}
-   \item \textbf{Adaptabilní procvičování}
-
-  \begin{itemize}
-   \item J. Papoušek, R. Pelánek, \textbf{V. Stanislav}. Adaptive Practice of Facts in Domains with Varied Prior Knowledge. Educational Data Mining (EDM), 2014.
-   \item J. Papoušek, R. Pelánek. Impact of Adaptive Educational System Behaviour on Student Motivation. Artificial Intelligence in Education (AIED), 2015.
-   \item J. Papoušek, R. Pelánek, J. Řihák, \textbf{V. Stanislav}. An Analysis of Response Times in Adaptive Practice of Geography Facts. Educational Data Mining (EDM), 2015.
-  \end{itemize}
-
-   \item \textbf{Modelování studentů }
-
-  \begin{itemize}
-   \item J. Nižnan, R. Pelánek, J. Řihák. Student Models for Prior Knowledge Estimation. Educational Data Mining (EDM), 2015.
-   \item R. Pelánek. Modeling Students' Memory for Application in Adaptive Educational Systems. Educational Data Mining (EDM), 2015.
-  \end{itemize}
-  \end{itemize}
-
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Další závěrečné práce}
-  \begin{itemize}
-  \item Dionýz Lazar - Analýza dat ze systému pro výuku zeměpisu (bakalářská práce)
-  \item Jan Kučera - Adaptabilní webový systém pro výuku anatomie, slepaanatomie.cz (diplomová práce)
+    \item Adaptive is better in some aspects
+    \item 
+    \item 
+    \
   \end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
@@ -172,7 +195,7 @@
 \begin{frame}
   \frametitle{~}
 \begin{center} 
-\huge  Děkuji za pozornost.
+\huge  Questions?
 \end{center}
 \end{frame}
 % ------------------------------------------------------------------------------
