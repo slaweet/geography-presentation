@@ -8,14 +8,20 @@
 
 \usetheme{Proso}
 
-\title[slepemapy.cz]{Adaptive Practice of Facts in Domains with Varied Prior Knowledge}
+\title[Adaptive Practice of Facts with Varied Prior Knowledge]{Adaptive Practice of Facts in Domains with Varied Prior Knowledge}
 \author{Vít Stanislav}
-\institute{Masaryk University, Brno}      % Enter your institute name between curly braces
+\institute{}      % Enter your institute name between curly braces
 \date{18. 11. 2015}
 
 \begin{document}
 % --------------------------- SLIDE --------------------------------------------
 \frame[plain]{\titlepage}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Motivation}
+   \includegraphics[width=\textwidth]{img/usa.png}
+\end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
@@ -46,7 +52,9 @@
 	\frametitle{Adaptive \ldots}
    \textbf{Adaptive} Practice of Facts in Domains with Varied Prior Knowledge
 	\begin{itemize}
-    \item 
+    \item Users' knowledge is highly varied
+    \item How to ask the right questions?
+    \item Which are the right questions?
     \
 	\end{itemize}
 \end{frame}
@@ -58,11 +66,11 @@
   \begin{columns}
    \begin{column}{.49\textwidth}
       \begin{itemize}
-        \item Where is Egypt?
-        \item Where is Burkina Faso?
+        \item Where is \textbf{Egypt}?
+        \item Where is \textbf{Burkina Faso}?
+        \\
         \item Do you know what means in English:
-        \item cat
-        \item bristle
+        \item cat, pavement, bristle, sapor, sarment
         \
       \end{itemize}
     \end{column}
@@ -82,6 +90,17 @@
 \begin{frame}
 	\frametitle{Practice}
    \includegraphics[width=\textwidth]{img/practice-example-en.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
+	\frametitle{Elo rating system in chess}
+	\begin{itemize}
+	  \item Each player has a number (how good they are)
+	  \item Result of a match can be predicted 
+	  \item Changing after each match
+    \
+	\end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
@@ -128,11 +147,11 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{How to measure it?}
+	\frametitle{What should we measure?}
   \begin{itemize}
-    \item Success rate increase?
-    \item User impression? 
     \item Time in the system? 
+    \item User impression? 
+    \item Success rate increase?
     \
   \end{itemize}
 \end{frame}
@@ -164,6 +183,13 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
+	\frametitle{Results - explicit feedback}
+	 \center{How difficult are the questions?}
+   \includegraphics[width=\textwidth]{img/feedback.png}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
 	\frametitle{Results - learning curve}
    \includegraphics[width=\textwidth]{img/learning_curves_all.png}
 \end{frame}
@@ -176,27 +202,14 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-	\frametitle{Results - filtered reverse learning curve}
-   \includegraphics[width=\textwidth]{img/learning_curves_reverse.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
 	\frametitle{Conclusion}
   \begin{itemize}
-    \item Adaptive is better in some aspects
-    \item 
-    \item 
+    \item Adaptive system for practicing facts
+    \item Prior and current knowledge estimation
+    \item Adaptivity has positive effects on user motivation to stay
+    \item Effects on learning are difficult to measure
     \
   \end{itemize}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-  \frametitle{~}
-\begin{center} 
-\huge  Questions?
-\end{center}
 \end{frame}
 % ------------------------------------------------------------------------------
 \end{document}
