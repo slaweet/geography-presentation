@@ -5,6 +5,7 @@
 \newcommand{\semitransp}[2][35]{\color{fg!#1}#2}
 \usepackage{wrapfig}
 \usepackage{graphicx, booktabs}
+\usepackage[autolanguage]{numprint}
 
 \usetheme{Proso}
 
@@ -125,6 +126,17 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
+	\frametitle{Are adaptive questions better then random?}
+  \begin{itemize}
+    \item Online A/B experiment (Random vs. Adaptive)
+    \item August to October 2015
+    \item More than \numprint{1300000} answers from roughly \numprint{20000} users
+    \
+  \end{itemize}
+\end{frame}
+% ------------------------------------------------------------------------------
+% --------------------------- SLIDE --------------------------------------------
+\begin{frame}
 	\frametitle{What should we measure?}
   \begin{itemize}
     \item Time in the system? 
@@ -136,60 +148,15 @@
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
 \begin{frame}
-  \frametitle{Are adaptive questions better then random?}
-\begin{center} 
-\begin{table}[tbh]
-  \centering
-  \begin{tabular}{lll}
-    \toprule
-    Condition & Item selection & Options selection \\
-    \midrule
-    A-A & Adaptive & Adaptive \\
-    A-R & Adaptive & Random \\
-    R-A & Random & Adaptive \\
-    R-R & Random & Random \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-\end{center}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Results - survivor graph}
-   \includegraphics[width=\textwidth]{img/survivor-hack-raw.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Results - return rate}
-\begin{table}
-  \centering
-  \label{tab:return-prob}
-  \begin{tabular}{ll}
-    \toprule
-    Condition & Return rate \\
-    \midrule
-    A-A & 	15.1\% \\
-    A-R & 	13.9\% \\
-    R-A & 	14.3\% \\
-    R-R & 	13.1\% \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Results - explicit feedback}
-	 \center{How difficult are the questions?}
-   \includegraphics[width=\textwidth]{img/feedback.png}
-\end{frame}
-% ------------------------------------------------------------------------------
-% --------------------------- SLIDE --------------------------------------------
-\begin{frame}
-	\frametitle{Results - learning curve}
-   \includegraphics[width=\textwidth]{img/learning_curves_all.png}
+	\frametitle{Results - Adaptive vs. Random}
+  \begin{itemize}
+    \item 9\% lower probability to leave earlier than after 10 questions
+    \item 15\% lower probability to leave earlier than after 50 questions
+    \item 15\% higher return rate 
+    \item 20\% more ``Appropriate'' responses in explicit feedback
+    \item 20\% higher sucess rate on the 10th reference question
+    \
+  \end{itemize}
 \end{frame}
 % ------------------------------------------------------------------------------
 % --------------------------- SLIDE --------------------------------------------
